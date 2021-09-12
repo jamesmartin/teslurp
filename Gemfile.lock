@@ -1,0 +1,73 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    async (1.30.1)
+      console (~> 1.10)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    async-http (0.56.5)
+      async (>= 1.25)
+      async-io (>= 1.28)
+      async-pool (>= 0.2)
+      protocol-http (~> 0.22.0)
+      protocol-http1 (~> 0.14.0)
+      protocol-http2 (~> 0.14.0)
+    async-io (1.32.2)
+      async
+    async-pool (0.3.8)
+      async (>= 1.25)
+    async-websocket (0.19.0)
+      async-http (~> 0.54)
+      async-io (~> 1.23)
+      protocol-websocket (~> 0.7.0)
+    console (1.13.1)
+      fiber-local
+    faraday (1.7.0)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    faraday_middleware (1.1.0)
+      faraday (~> 1.0)
+    fiber-local (1.0.0)
+    multipart-post (2.1.1)
+    nio4r (2.5.8)
+    protocol-hpack (1.4.2)
+    protocol-http (0.22.5)
+    protocol-http1 (0.14.2)
+      protocol-http (~> 0.22)
+    protocol-http2 (0.14.2)
+      protocol-hpack (~> 1.4)
+      protocol-http (~> 0.18)
+    protocol-websocket (0.7.5)
+      protocol-http (~> 0.2)
+      protocol-http1 (~> 0.2)
+    ruby2_keywords (0.0.5)
+    tesla_api (3.1.0)
+      async-websocket
+      faraday
+      faraday_middleware
+    timers (4.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  tesla_api
+
+BUNDLED WITH
+   2.1.4
